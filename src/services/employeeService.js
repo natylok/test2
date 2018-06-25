@@ -4,7 +4,7 @@ import DateService from './dateService';
 const DESC = 'desc', SALES_HOUR = 'salesHours'
 class EmployeeService{
     getTopEmployeeSellers(hotelInvites){
-        let employeesData = {}
+        let employeesData = {};
         hotelInvites.forEach(inviteDetails => {
             if(this.employeeExistInOrder(inviteDetails)){
                 if(!employeesData[inviteDetails.employee.id]){
